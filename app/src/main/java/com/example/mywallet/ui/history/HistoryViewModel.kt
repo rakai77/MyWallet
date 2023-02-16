@@ -21,10 +21,6 @@ class HistoryViewModel @Inject constructor(private val repository: WalletReposit
 
     val token = pref.getToken()
 
-    init {
-        getTransactionHistory("Bearer $token")
-    }
-
     fun getTransactionHistory(token: String) {
         repository.getTransactionHistory(token).onEach { response ->
             when(response) {

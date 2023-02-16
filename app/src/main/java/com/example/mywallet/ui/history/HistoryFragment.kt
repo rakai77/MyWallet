@@ -39,8 +39,8 @@ class HistoryFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        setupAction()
         setupRecyclerView()
+        setupAction()
         initObserve()
     }
 
@@ -78,6 +78,9 @@ class HistoryFragment : Fragment() {
                             shimmerHistory.root.visibility = View.GONE
                             rvHistory.visibility = View.VISIBLE
                             emptyState.root.visibility = View.GONE
+                            result.data.data.let {
+                                adapter.submitList(it)
+                            }
                             Log.d("Check RV", "$result")
                         }
 
