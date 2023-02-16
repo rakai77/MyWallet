@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_home">
+
+    <fragment
+        android:id="@+id/navigation_home"
+        android:name="com.example.mywallet.ui.home.HomeFragment"
+        android:label="@string/title_home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_navigation_home_to_transferActivity"
+            app:destination="@id/transferActivity" />
+        <action
+            android:id="@+id/action_navigation_home_to_topUpActivity"
+            app:destination="@id/topUpActivity" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_history"
+        android:name="com.example.mywallet.ui.history.HistoryFragment"
+        android:label="@string/title_history"
+        tools:layout="@layout/fragment_history" />
+
+    <fragment
+        android:id="@+id/navigation_profile"
+        android:name="com.example.mywallet.ui.profile.ProfileFragment"
+        android:label="@string/title_profile"
+        tools:layout="@layout/fragment_profile" >
+        <action
+            android:id="@+id/action_navigation_profile_to_updateProfileActivity"
+            app:destination="@id/updateProfileActivity" />
+    </fragment>
+    <activity
+        android:id="@+id/transferActivity"
+        android:name="com.example.mywallet.ui.home.transfer.TransferActivity"
+        android:label="activity_transfer"
+        tools:layout="@layout/activity_transfer" />
+    <activity
+        android:id="@+id/topUpActivity"
+        android:name="com.example.mywallet.ui.home.topup.TopUpActivity"
+        android:label="activity_top_up"
+        tools:layout="@layout/activity_top_up" />
+    <activity
+        android:id="@+id/updateProfileActivity"
+        android:name="com.example.mywallet.ui.profile.updateprofile.UpdateProfileActivity"
+        android:label="activity_update_profile"
+        tools:layout="@layout/activity_update_profile" />
+</navigation>

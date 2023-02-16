@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">MyWallet</string>
+    <string name="title_home">Home</string>
+    <string name="title_history">History</string>
+    <string name="title_profile">Profile</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="btn_login">Login</string>
+    <string name="offer_signup">Don\'t have an account?</string>
+    <string name="offer_login">Already have an account?</string>
+    <string name="btn_signup">Signup</string>
+    <string name="first_name">First Name</string>
+    <string name="last_name">Last Name</string>
+    <string name="content_description">This is image</string>
+    <string name="profile_name">Profile Name</string>
+    <string name="logout">Logout</string>
+    <string name="update_profile">Update Profile</string>
+    <string name="your_balance">Your Balance</string>
+    <string name="topUP">Top Up</string>
+    <string name="transfer">Transfer</string>
+    <string name="enter_topup_amount">Enter Amount</string>
+    <string name="tvTypeTransaction">Transaction</string>
+    <string name="transaction_date">date</string>
+    <string name="transaction_amount">Rp 10.000</string>
+    <string name="empty_data">Empty Data</string>
+
+</resources>
